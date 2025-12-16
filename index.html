@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <!-- Importing a nice font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer">
+            <div class="timer-bg">
+                <p id="timer" class="timer"><span id="minutes">00</span>:<span id="seconds">00</span>:<span
+                        id="tens">00</span></p>
+            </div>
+            <div class="btn-group">
+                <button class="btn" id="start" onclick="startTimer()">START</button>
+                <button class="btn" id="stop" onclick="stopTimer()">STOP</button>
+                <button class="btn" id="reset" onclick="resetTimer()">RESET</button>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <!-- Home Team -->
+            <div class="team">
+                <h3>HOME</h3>
+                <div class="score-bg">
+                    <div id="home-score" class="score">0</div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn" onclick="addHome(1)">+1</button>
+                    <button class="btn" onclick="addHome(2)">+2</button>
+                    <button class="btn" onclick="addHome(3)">+3</button>
+                </div>
+            </div>
+
+            <!-- Away Team -->
+            <div class="team">
+                <h3>AWAY</h3>
+                <div class="score-bg">
+                    <div id="away-score" class="score">0</div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn" onclick="addAway(1)">+1</button>
+                    <button class="btn" onclick="addAway(2)">+2</button>
+                    <button class="btn" onclick="addAway(3)">+3</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="reset-btn" onclick="resetGame()">NEW GAME</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

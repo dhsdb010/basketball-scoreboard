@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B244A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Scoreboard Layout */
+.scoreboard {
+    display: flex;
+    gap: 60px;
+    /* Space between home and away */
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    font-family: 'Orbitron', monospace;
+    font-size: 3.5rem;
+    color: #F94F6D;
+    /* Neon Red Score */
+    line-height: normal;
+    text-shadow: 0 0 10px rgba(249, 79, 109, 0.5);
+    /* Glow effect */
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.score-bg {
+    background-color: black;
+    border-radius: 5px;
+    width: 150px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.score {
+    font-family: 'Orbitron', monospace;
+    font-size: 5.5rem;
+    color: #F94F6D;
+    /* Neon Red Score */
+    line-height: normal;
+    text-shadow: 0 0 10px rgba(249, 79, 109, 0.5);
+    /* Glow effect */
+}
+
+.timer-bg {
+    background-color: black;
+    border-radius: 5px;
+    width: 360px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Scoring Buttons */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn {
+    border: 2px solid #9AABD8;
+    /* Light blue border */
+    background: transparent;
+    color: #9AABD8;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-family: 'Orbitron', monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Reset Button */
+.reset-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #F94F6D;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    background-color: #F94F6D;
+    box-shadow: 0 0 15px rgba(249, 79, 109, 0.4);
+    transform: translateY(-2px);
+}
+
+.reset-btn:active {
+    transform: translateY(0);
+}
